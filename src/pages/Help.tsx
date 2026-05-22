@@ -80,7 +80,10 @@ export default function Help() {
         </CardContent>
       </Card>
 
-      <p className="text-center text-xs text-muted-foreground">VapeShopPro v1.0 - {t("poweredBy")}</p>
+      <div className="flex items-center justify-center gap-2">
+        <img src="/systemaspro-logo.jpeg" alt="SystemasPro" className="w-5 h-5 rounded-sm object-contain" />
+        <p className="text-center text-xs text-muted-foreground">VapeShopPro v1.0 - Powered by <span className="text-red-500 font-semibold">SystemasPro</span></p>
+      </div>
     </div>
   );
 }

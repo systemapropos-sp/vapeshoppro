@@ -77,9 +77,14 @@ export default function Login() {
       <div className="relative z-10 w-full max-w-md mx-4">
         {/* Logo */}
         <div className="text-center mb-8">
-          <img src="/logo.png" alt="VapeShopPro" className="w-24 h-24 mx-auto mb-4 rounded-2xl shadow-2xl shadow-cyan-500/20" />
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <img src="/logo.png" alt="VapeShopPro" className="w-20 h-20 rounded-2xl shadow-2xl shadow-cyan-500/20" />
+            <span className="text-slate-500 text-2xl">x</span>
+            <img src="/systemaspro-logo.jpeg" alt="SystemasPro" className="w-20 h-20 rounded-2xl shadow-2xl shadow-red-500/20 object-contain bg-white" />
+          </div>
           <h1 className="text-3xl font-bold text-white">{t("appName")}</h1>
           <p className="text-slate-400 mt-1">{t("loginSubtitle")}</p>
+          <p className="text-xs text-slate-500 mt-2">Powered by <span className="text-red-400 font-semibold">SystemasPro</span></p>
         </div>
 
         {/* Login Card */}

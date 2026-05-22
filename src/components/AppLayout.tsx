@@ -155,12 +155,15 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         )}
       >
         {/* Logo */}
-        <div className="flex items-center gap-3 px-4 h-16 border-b border-slate-700 shrink-0">
-          <img src="/logo.png" alt="VapeShopPro" className="w-9 h-9 rounded-lg object-cover shrink-0" />
+        <div className="flex items-center gap-2 px-3 h-16 border-b border-slate-700 shrink-0">
+          <img src="/logo.png" alt="VapeShopPro" className="w-8 h-8 rounded-lg object-cover shrink-0" />
           {!sidebarCollapsed && (
-            <div className="overflow-hidden transition-all duration-300">
-              <h1 className="text-base font-bold truncate">{t("appName")}</h1>
-              <p className="text-[10px] text-slate-400 truncate">{t("poweredBy")}</p>
+            <div className="overflow-hidden transition-all duration-300 flex-1">
+              <h1 className="text-sm font-bold truncate">{t("appName")}</h1>
+              <div className="flex items-center gap-1">
+                <img src="/systemaspro-logo.jpeg" alt="SystemasPro" className="w-3 h-3 rounded-sm object-contain" />
+                <p className="text-[9px] text-red-400 truncate">SystemasPro</p>
+              </div>
             </div>
           )}
         </div>
